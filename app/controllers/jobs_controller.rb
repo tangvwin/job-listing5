@@ -3,7 +3,7 @@ class JobsController < ApplicationController
 
 
     def index
-      @jobs = Job.all
+      @jobs = Job.where(:is_hidden => false).order("created_at DESC")
     end
 
     def show
@@ -47,7 +47,7 @@ class JobsController < ApplicationController
     private
 
     def job_params
-      params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :contact_phone)
+      params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :contact_phone,:is_hidden)
     end
 
 end

@@ -10,17 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170303083047) do
+ActiveRecord::Schema.define(version: 20170305080057) do
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
     t.integer  "wage_upper_bound", limit: 8
     t.integer  "wage_lower_bound", limit: 8
     t.string   "contact_email"
     t.integer  "contact_phone",    limit: 16
+    t.boolean  "is_hidden",                   default: true
   end
 
   create_table "users", force: :cascade do |t|
