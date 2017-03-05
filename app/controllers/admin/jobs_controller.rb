@@ -46,6 +46,19 @@ class Admin::JobsController < ApplicationController
       redirect_to admin_jobs_path
     end
 
+    def publish
+        @job = Job.find(params[:id])
+        @job.publish! = false
+
+        redirect_to :back
+      end
+
+      def hide
+        @job = Job.find(params[:id])
+        @job.hide! = true
+        
+        redirect_to :back
+      end
 
 
 
