@@ -19,7 +19,7 @@ class Job < ApplicationRecord
   scope :recent, -> {order('created_at DESC')}
 
 
-
+   has_many :resume
 
 
 end
