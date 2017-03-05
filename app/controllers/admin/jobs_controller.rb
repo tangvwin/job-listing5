@@ -48,15 +48,15 @@ class Admin::JobsController < ApplicationController
 
     def publish
         @job = Job.find(params[:id])
-        @job.publish! = false
+        @job.publish!
 
         redirect_to :back
       end
 
       def hide
         @job = Job.find(params[:id])
-        @job.hide! = true
-        
+        @job.hide!
+
         redirect_to :back
       end
 
