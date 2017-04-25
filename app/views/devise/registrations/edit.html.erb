@@ -4,7 +4,7 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
   <div class="form-group">
-   <%= f.label :avatar, class: 'col-sm-2 control-label'  %>
+   <%= f.label :avatar %>
    <div class="col-sm-6">
        <%= f.file_field :avatar %>
    </div>
