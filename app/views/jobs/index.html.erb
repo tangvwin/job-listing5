@@ -28,6 +28,9 @@
                 职缺</td>
             <td>薪资下限</td>
             <td>薪资上限</td>
+            <td>所在城市</td>
+            <td>所在公司</td>
+
             <td>刊登时间</td>
         </tr>
 
@@ -43,6 +46,12 @@
             </td>
             <td>
                 <%= job.wage_upper_bound %>
+            </td>
+            <td>
+                <%= job.location %>
+            </td>
+            <td>
+                <%= job.company %>
             </td>
             <td>
                 <%= job.created_at %>
