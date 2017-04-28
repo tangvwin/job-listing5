@@ -208,3 +208,14 @@
      border-radius: 3px;//btn圆角
      width: 200px;//这里用指定宽度把btn拉得更长
  }
+
+ .form-group {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 250px; //加上width
+}

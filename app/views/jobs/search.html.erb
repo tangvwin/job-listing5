@@ -1,0 +1,82 @@
+
+
+
+
+
+<div>
+  <br>
+  <% if @query_string.blank? %>
+    <div class="search-info-title">
+      Sorry, The search content cannot be blank, please type some product into to search.
+    </div>
+    <div class="col-md-12">
+
+     <% elsif @jobs.blank?%>
+       <br>
+       <h3 class="text-center">
+         Opps! No jobs matched yet, please try again.
+       </h3>
+     <% else %>
+       <h3 class="text-center" style="margin-top: 30px;">Total find <%= @jobs.count %> 条有关有关"<%= @query_string %>"的工作信息</h3>
+       <hr />
+
+       <table class="table table-bordered">
+         <thead class="text-center">
+           <tr>
+             <td>
+               职缺
+             </td>
+             <td>
+               信息
+             </td>
+             <td>
+               薪资下限
+             </td>
+             <td>
+               薪资上限
+             </td>
+             <td>所在城市</td>
+             <td>所在公司</td>
+             <td>
+               刊登时间
+             </td>
+           </tr>
+         </thead>
+         <tbody>
+
+
+         <% @jobs.each do |job| %>
+         <tr>
+           <td>
+             <%= link_to(job.title, job_path(job))%>
+           </td>
+           <td>
+             <%= job.description%>
+           </td>
+           <td>
+             <%= job.wage_lower_bound %>
+
+           </td>
+           <td>
+               <%= job.wage_upper_bound %>
+                   </td>
+                   <td>
+                       <%= job.location %>
+                   </td>
+                   <td>
+                       <%= job.company %>
+                   </td>
+           <td>
+             <%=job.created_at.to_date %>
+           </td>
+         </tr>
+         <% end %>
+         </tbody>
+        </table>
+
+        <div class="text-center">
+       <%= will_paginate @jobs, renderer: BootstrapPagination::Rails %>
+       </div>
+
+     <% end %>
+   </div>
