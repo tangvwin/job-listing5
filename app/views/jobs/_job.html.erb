@@ -1,50 +1,34 @@
-<div class="col-sm-6 col-md-4 job-thumbnail">
-	<div class="thumbnail">
-		<h2 class="text-center"><%= link_to(job.title,job_path(job)) %></h2>
-		<hr>
+<div class="col-sm-6 col-md-4">
+<div class="col-md-4 page foldtl">
 
-		<div class="meta" >
-			<div class="row">
-				<div  class="col-md-6" >
-					<h4>
+
+  <div class="row">
+      <h4 class="text-center"><%= link_to(job.title,job_path(job)) %></h4>
+      <h4>
 					<i class="fa fa-money" aria-hidden="true"></i> <%= job.wage_lower_bound  %> ~ <%= job.wage_upper_bound  %>
 					</h4>
-
-				</div>
-
-				<div class="col-md-6">
-					<h4>
+          <h4>
 					<i class="fa fa-location-arrow" aria-hidden="true"></i>
 					<%= job.location  %>
 					</h4>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-
-					<h4>
+          <h4>
 					<i class="fa fa-building" aria-hidden="true"></i>
 					<%= job.company  %>
 					</h4>
-				</div>
+          					<h4><i class="fa fa-clock-o" aria-hidden="true"></i>	<%= job.created_at.strftime("%d %b. %Y")  %> </h4>
 
-				<div class="col-md-6">
-					<h4><i class="fa fa-clock-o" aria-hidden="true"></i>	<%= job.created_at.strftime("%d %b. %Y")  %> </h4>
-				</div>
-			</div>
+                    <% if current_user &&current_user.has_attribute?(job) %>
+               				<%= link_to("Has applied",job_path(job),:class=> "btn btn-danger disabled", :style=>"margin-left:35%;margin-top:15px;")%>
+               				<% else %>
+               				<%= link_to("Apply job",job_path(job),:class=> "btn btn-danger", :style=>"margin-left:35%;margin-top:15px;")%>
+               				<% end %>
 
-		</div>
-		<div class="row justify-content-center">
-			<div class=" col-md-12" >
-				<% if current_user &&current_user.has_attribute?(job) %>
-				<%= link_to("Has applied",job_path(job),:class=> "btn btn-danger disabled", :style=>"margin-left:35%;margin-top:15px;")%>
-				<% else %>
-				<%= link_to("Apply job",job_path(job),:class=> "btn btn-danger", :style=>"margin-left:35%;margin-top:15px;")%>
-				<% end %>
-			</div>
-		</div>
-		<div>
-		</div>
-	</div>
+  </div>
+  <div class="row">
+      <span class="salePercentage" style="margin-top: -35px">Now</span>
+  </div>
+
+
+</div>
+
 </div>

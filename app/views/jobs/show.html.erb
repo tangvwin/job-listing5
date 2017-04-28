@@ -1,9 +1,36 @@
 
-<h2><%= @job.title%></h2>
-<p>
-  <%= simple_format(@job.description) %>
 
-</p>
-<div class="text-center">
-  <%= link_to("投交简历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
-</div>
+
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-default  panel--styled">
+					<div class="panel-body">
+						<div class="col-md-12 panelTop">
+							<div class="col-md-4">
+								<img class="img-responsive" src="http://placehold.it/350x350" alt=""/>
+							</div>
+							<div class="col-md-8">
+								<h2><%= @job.title%></h2>
+                <p>
+                  <%= simple_format(@job.description) %>
+
+                </p>
+              	</div>
+						</div>
+
+						<div class="col-md-12 panelBottom">
+							<div class="col-md-4 text-center">
+<%= link_to("投交简历", new_job_resume_path(@job), :style => "font-size: 30px; ", :class => "btn btn-primary") %>
+							</div>
+
+							<div class="col-md-4">
+								<div class="stars">
+								 <div id="stars" class="starrr"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>

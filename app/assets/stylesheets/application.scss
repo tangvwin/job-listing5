@@ -398,105 +398,92 @@ color: #fff;
 /******************
  show jobs
  ******************/
-.featured-jobs {
-  padding: 70px 0px;
-  background: #f2f0f1;
-}
-.featured-jobs .thumbnail {
-  padding: 20px;
-}
-.featured-jobs .thumbnail img {
-  float: left;
-  margin: 0 10px 10px 0;
-}
-.featured-jobs .thumbnail .feature-link {
-  color: #77c7dc;
-}
-.featured-jobs .thumbnail .feature-link h3 {
-  padding-left: 10px;
-  margin: 0 0 6px;
-  font-size: 18px;
-}
-.featured-jobs .thumbnail .meta {
-  color: #f16060;
-  font-size: 11px;
-  height: 100px;
-}
-.featured-jobs .thumbnail p {
-  font-size: 12px;
-  margin: 0 0 5px;
-}
-.featured-jobs .thumbnail .feature-btns {
-  position: absolute;
-  bottom: -13px;
-  left: 15px;
-}
-@media only screen and (max-width:1024px) {
-  .thumbnail {
-    margin-bottom: 50px;
-  }
-  .featured-jobs .thumbnail .feature-btns {
-    bottom: 17px;
-  }
-}
-@media only screen and (max-width:790px) {
-  .thumbnail {
-    margin-bottom: 50px;
-  }
-  .featured-jobs .thumbnail .feature-btns {
-    bottom: -33px;
-  }
-}
-.reg-style {
-  background-image: url("http://r.photo.store.qq.com/psb?/V11mqdez1kYrfX/GuOxxc5HArR7DNszKiQSlshNe7HWefhuSjDI0CVUyck!/r/dHkBAAAAAAAA.png");
-  margin-left: -15px;
-  margin-right: -30px;
-  height: 730px;
-  width: 1430px;
-  background-size: cover;
-}
-.reg-panel {
-  position: relative;
-  top: 150px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 0px;
-}
-.reg-btn {
-  width: 100%;
-}
-.user-reg-log-head {
-  font-size: 2em;
-  margin-bottom: 30px;
-  text-align: center;
-  color: black;
-}
-.jobs-show {
-  background-image: url("http://r.photo.store.qq.com/psb?/V11mqdez1kYrfX/fxT8kJ05wMiaWVSEP6ANLd5Q*GFsbJhFlLYSLeSfzng!/r/dHgBAAAAAAAA.png");
-  margin-left: -15px;
-  margin-right: -30px;
-  height: 730px;
-  width: 1430px;
-  background-size: cover;
-}
-.jobs-show-panel {
-  position: relative;
-  max-width: 720px;
-  top: 25%;
-  left: 15%;
-}
-.panel.panel-default.jobs-show-panel {
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
-}
-.jobs-show-header {
-  position: relative;
-  color: black;
-  top: 10%;
-  text-align: center;
-}
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+ body {
+   background: #fff;
+ }
+
+ .page {
+   background: #fff;
+   width: 350px;
+   height: 230px;
+   margin: 50px;
+
+  /* Optional Gradient */
+   background: -moz-linear-gradient(bottom,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(bottom,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(bottom,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(bottom,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+   background: linear-gradient(bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+ }
+
+ .page h2 {
+   padding: 15px 0 0 20px;
+   font: 400 35px/1.5 'Lilita One', Helvetica, sans-serif;
+ }
+
+ .page p {
+   padding: 10px 20px;
+   font: 12px/1.5 Helvetica, sans-serif;
+   color: #4b4b4b;
+ }
+
+ .triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 170px solid #000;
+  border-right: 170px solid transparent;
+ }
+
+ .foldtl {
+   position: relative;
+   -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+   -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+   box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+ }
+
+ .foldtl:before {
+   content: "";
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   width: 0px;
+   height: 0px;
+   border-top: 70px solid #eee;
+   border-left: 70px solid transparent;
+   -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+   -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+   box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+ }
+
+ .foldtl:after {
+   content: "";
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   width: 0px;
+   height: 0px;
+   border-bottom: 69px solid rgba(255, 191, 31, 1);
+   border-right: 69px solid transparent;
+
+ }
+
+ .salePercentage {
+     font-weight: bold;
+     position: absolute;
+     padding-top: 35px;
+     padding-left: 5px;
+     z-index: 1;
+     color: #f02333;
+ }
+
+ .saleOff {
+     font-size: 10px;
+     font-weight: bold;
+     position: absolute;
+     padding-top: 50px;
+     padding-left: 5px;
+     z-index: 1;
+     color: #f02333;
+ }
