@@ -23,7 +23,7 @@
             <td>所在城市</td>
             <td>所在公司</td>
             <td>
-                管理选项
+                管理选项<%=content_tag(:span, "", :class => "fa fa-cog")%>
             </td>
 
             <td>
@@ -52,8 +52,8 @@
         </td>
         <td>
 
-    <%= link_to("Edit", edit_admin_job_path(job), :class => "btn btn-xs btn-info") %>
-    <%= link_to("Destroy", admin_job_path(job), :method => :delete, :class => "btn btn-xs btn-danger", :data => { :confirm => "Are you sure?" }) %>
+    <%= link_to("", edit_admin_job_path(job), :class => "btn btn-xs fa fa-pencil btn-info") %>
+    <%= link_to("", admin_job_path(job), :method => :delete, :class => "btn btn-xs fa fa-trash  btn-danger", :data => { :confirm => "Are you sure?" }) %>
      <% if job.is_hidden %>
         <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-success") %>
      <% else %>
