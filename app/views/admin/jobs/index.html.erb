@@ -52,12 +52,12 @@
         </td>
         <td>
 
-    <%= link_to("Edit", edit_admin_job_path(job), :class => "btn btn-xs btn-info") %>
-    <%= link_to("Destroy", admin_job_path(job), :method => :delete, :class => "btn btn-xs btn-danger", :data => { :confirm => "Are you sure?" }) %>
+    <%= link_to("", edit_admin_job_path(job), :class => "btn btn-sm btn-info fa fa-pencil-square-o") %>
+    <%= link_to("", admin_job_path(job), :method => :delete, :class => "btn btn-sm btn-danger fa fa-trash", :data => { :confirm => "Are you sure?" }) %>
      <% if job.is_hidden %>
-        <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-success") %>
+        <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-sm btn-success fa fa-eye") %>
      <% else %>
-        <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
+        <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-sm btn-warning fa fa-eye-slash") %>
      <% end %>
 </td>
 

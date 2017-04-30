@@ -3,19 +3,19 @@
 
 
   <div class="row">
-      <h4 class="text-center"><%= link_to(job.title,job_path(job)) %></h4>
-      <h4>
+      <h3 class="text-center"><%= link_to(job.title,job_path(job)) %></h3>
+      <h4 class="text-center">
 					<i class="fa fa-money" aria-hidden="true"></i> <%= job.wage_lower_bound  %> ~ <%= job.wage_upper_bound  %>
 					</h4>
-          <h4>
+          <h4 class="text-center">
 					<i class="fa fa-location-arrow" aria-hidden="true"></i>
 					<%= job.location  %>
 					</h4>
-          <h4>
+          <h4 class="text-center">
 					<i class="fa fa-building" aria-hidden="true"></i>
 					<%= job.company  %>
 					</h4>
-          					<h4><i class="fa fa-clock-o" aria-hidden="true"></i>	<%= job.created_at.strftime("%d %b. %Y")  %> </h4>
+          					<h4 class="text-center"><i class="fa fa-clock-o" aria-hidden="true"></i>	<%= job.created_at.strftime("%d %b. %Y")  %> </h4>
 
                     <% if current_user &&current_user.has_attribute?(job) %>
                				<%= link_to("Has applied",job_path(job),:class=> "btn btn-danger disabled", :style=>"margin-left:35%;margin-top:15px;")%>
@@ -25,7 +25,7 @@
 
   </div>
   <div class="row">
-      <span class="salePercentage" style="margin-top: -35px">Now</span>
+      <span class="salePercentage" style="margin-top: -35px"></span>
   </div>
 
 

@@ -25,6 +25,21 @@
 /******footer's import*****/
 
 
+
+
+/**********background color**************/
+
+html body
+  {
+  background-image: url('https://ww1.sinaimg.cn/large/006tKfTcgy1ff54rju5qsj30b40b43zy.jpg');
+  background-repeat: repeat;
+  }
+
+
+
+
+
+
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
@@ -396,7 +411,7 @@ color: #fff;
 
 
 /******************
- show jobs
+index jobs
  ******************/
  body {
    background: #fff;
@@ -487,3 +502,63 @@ color: #fff;
      z-index: 1;
      color: #f02333;
  }
+
+
+
+
+
+/*********show page***************
+**********************************
+**********************************/
+
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: right;
+    display: block;
+    margin-top: 60px;
+}
+.box-icon {
+    background-color: #FF6F00;
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+}
+.box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.info h4 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.info > p {
+    color: #717171;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: justify;
+}
+.info > a {
+    background-color: #03a9f4;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.info > a:hover {
+    background-color: #0288d1;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+
+.wrap{
+  margin:0 auto;width:960px;
+}
