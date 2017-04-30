@@ -422,6 +422,7 @@ index jobs
    width: 350px;
    height: 230px;
    margin: 50px;
+   
 
   /* Optional Gradient */
    background: -moz-linear-gradient(bottom,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
@@ -545,6 +546,8 @@ index jobs
     padding-top: 10px;
     text-align: justify;
 }
+
+/**********
 .info > a {
     background-color: #03a9f4;
     border-radius: 2px;
@@ -558,7 +561,10 @@ index jobs
     color: #fff;
     transition: all 0.5s ease 0s;
 }
-
+*********************************************/
 .wrap{
   margin:0 auto;width:960px;
+}
+.box{
+  background-color: white;
 }
