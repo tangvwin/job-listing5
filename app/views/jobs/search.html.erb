@@ -17,12 +17,12 @@
          Opps! No jobs matched yet, please try again.
        </h3>
      <% else %>
-       <h3 class="text-center" style="margin-top: 30px;">Total find <%= @jobs.count %> 条有关有关"<%= @query_string %>"的工作信息</h3>
+       <h3 class="text-center" style="margin-top: 30px;">找到 <%= @jobs.count %> 条有关"<%= @query_string %>"的工作信息</h3>
        <hr />
 
        <table class="table table-bordered">
          <thead class="text-center">
-           <tr>
+           <tr class="active">
              <td>
                职缺
              </td>

@@ -167,6 +167,16 @@ html body
         img { width: 100% }
     }
 
+    .date-select {
+        display: inline-block;
+        width: 30%;
+    }
+
+
+
+
+
+
 
 
 /****** 封面 ******/
@@ -422,7 +432,7 @@ index jobs
    width: 350px;
    height: 230px;
    margin: 50px;
-   
+
 
   /* Optional Gradient */
    background: -moz-linear-gradient(bottom,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
