@@ -1,6 +1,15 @@
-<h1> <%= @job.title %> </h1>
+<div class="col-md-6">
+           <div class="box">
+               <div class="box-icon">
+                   <span class="fa fa-4x fa-connectdevelop"></span>
+               </div>
+               <div class="info">
+                   <h2 class="text-center"><%= @job.title%></h2>
+                   <p class="text-indentstyle">
+                    <%= simple_format(@job.description) %>
 
-<p>
-  <%= simple_format(@job.description) %>
+                   </p>
 
-</p>
+                </div>
+           </div>
+       </div>

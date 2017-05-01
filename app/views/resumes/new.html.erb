@@ -1,24 +1,27 @@
-<h3> 投交履历到 <%= @job.title %> </h3>
-
-<hr>
-
-<%= simple_form_for [@job, @resume] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :attachment %>
-  <%= f.submit "送出" %>
-<% end %>
 
 
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <div class="iconbox">
-          <div class="iconbox-icon">
-            <span class="glyphicon glyphicon-user"></span>
-          </div>
-          <div class="featureinfo">
-            <h4 class="text-center">Title</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!
-            </p>
-            <a class="btn btn-default btn-sm" href=""about.php#bottom"" role="button">View Page »</a>
-          </div>
-        </div>
+
+
+
+
+			<div class="wrap">
+		             <div class="box">
+		                 <div class="box-icon">
+		                     <span class="fa fa-4x fa-connectdevelop"></span>
+		                 </div>
+		                 <div class="info">
+		                     <h2 class="text-center">投交履历到  <%= @job.title%></h2>
+                         <%= simple_form_for [@job, @resume] do |f| %>
+
+                           <%= f.input :content %>
+                         <br>
+                           <div align="left">
+                           <%= f.input :attachment, label: 'PDF File' , input_html:{accept: ('application/pdf')} %>
+                         </div>
+                           <%= f.submit "送出" , class: 'btn btn-danger'%>
+                         <% end %>
+
+
+											</div>
+		             </div>
+		         </div>
