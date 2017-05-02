@@ -13,10 +13,13 @@
 		                     <h2 class="text-center">投交履历到  <%= @job.title%></h2>
                          <%= simple_form_for [@job, @resume] do |f| %>
 
-                           <%= f.input :content %>
+                          <div align="left">
+                           <%= f.input :content, label: '个人简介' %>
+                         </div>
+
                          <br>
                            <div align="left">
-                           <%= f.input :attachment, label: 'PDF File' , input_html:{accept: ('application/pdf')} %>
+                           <%= f.input :attachment, label: '上传pdf履历' , input_html:{ accept: ('application/pdf')} %>
                          </div>
                            <%= f.submit "送出" , class: 'btn btn-danger'%>
                          <% end %>

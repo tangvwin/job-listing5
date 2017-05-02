@@ -179,61 +179,61 @@ html body
 
 
 
-/****** 封面 ******/
+/****** 封面 welcome index ******/
 
-    .jumbotron {
-      background-image:url('http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-542213.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-bottom: 110px;
-    }
+.jumbotron {
+background-image:url('https://abc.2008php.com/2014_Website_appreciate/2015-01-22/20150122012623.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding-bottom: 110px;
 
-    .title {
-
-
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
-  border-top-right-radius: 3px;//右上角圆边
-  border-top-left-radius: 3px;//左上角圆边
+  height: 700px;
 }
 
- .jumbotron h1, .jumbotron .h1 {
-     text-align: left;//文字左对齐
-     color: #222;  //字体颜色
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+    background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+    max-width: 200px;//最大宽度
+    margin-top: 100px;//和顶部拉开距离
+    margin-bottom: 0;//这样就可以紧接息面的描述文字
+    border-top-right-radius: 3px;//右上角圆边
+    border-top-left-radius: 3px;//左上角圆边
+    text-align: left;
+  }
 
-     padding: 50px 20px 0;//上50px，左右20px，下0
- }
+   .jumbotron h1, .jumbotron .h1 {
+       text-align: left;//文字左对齐
+       color: #222;  //字体颜色
 
- .jumbotron p {
+       padding: 50px 20px 0;//上50px，左右20px，下0
+   }
 
-     margin: 0;//上下左右margin为0
-     font-size: 26px;//字体大小
-     max-width: 500px;//最大宽度
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-     padding: 20px;//上下左右padding为20px
-     text-align:left;//文字左对齐
-     color: #222;//字体颜色
+   .jumbotron p {
+       margin: 0;//上下左右margin为0
+       font-size: 26px;//字体大小
+       max-width: 500px;//最大宽度
+       background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+       padding: 20px;//上下左右padding为20px
+       text-align:left;//文字左对齐
+       color: #222;//字体颜色
 
-     border-bottom-right-radius: 3px;//右下角圆边
-     border-bottom-left-radius: 3px;//左下角圆边
- }
+       border-bottom-right-radius: 3px;//右下角圆边
+       border-bottom-left-radius: 3px;//左下角圆边
+   }
 
+.slogan {
+margin-top: 10px;
+margin-bottom: 50px;
+text-align: left;
+color: white;
+top: 12px;
+}
 
-    .slogan {
-      margin-top: 10px;
-      margin-bottom: 50px;
-      text-align: center;
-      color: white;
-      top: 12px;
-    }
-
-    .lead {
-      margin-bottom: 60px;
-      text-align: center;
-      color: white;
-    }
+.lead {
+margin-bottom: 60px;
+text-align: left;
+color: white;
+}
     .caption {
     margin: 30px;
     text-align: center;
@@ -373,6 +373,100 @@ html body
 ******封面翻版***************
 ****************************/
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remve the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
 
 
 
@@ -402,6 +496,7 @@ html body
 
 
 
+/************************************************************************************************************************/
 
 
 /*******footer*******/
