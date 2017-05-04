@@ -5,10 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-pcompany_info= [["Apple Inc.","Cupertino, CA, US"] ,["Samsung Electronics","Suwon, South Korea"] ,
+company_info= [["Apple Inc.","Cupertino, CA, US"] ,["Samsung Electronics","Suwon, South Korea"] ,["Yum","Louisville, US"],
  ["Amazon.com","Seattle, WA, US"] ,["HP Inc. + HPE","Palo Alto, CA, US"] ,["Microsoft","Redmond, WA, US"] ,
- ["IBM","Armonk, NY, US"] ,["Alphabet Inc.","Mountain View, CA, US"] ,["Dell Technologies","Austin, TX, US"] ,
- ["Huawei","Shenzhen, China"]]
+ ["IBM","Armonk, NY, US"] ,["Alphabet Inc.","Mountain View, CA, US"] ,["Baidu","Beijing, China"] ,["Sogou","Shanghai, China"] ,
+ ["NIKE","Dongguan, China"]]
 
 jobs_info = [["Web Application Developer","Creates, maintains and implements web-based application systems. Resolves issues and recommends enhancements, when necessary. Has knowledge of HTML, Java and related concepts. Relies on knowledge and professional discretion to plan and accomplish goals. Usually reports to a department head. Significant ingenuity and flexibility is expected. May require a bachelor’s degree in a related area and at least 2-4 years of relevant experience."
 ],[ "Android Developer","Designs and builds applications for the Android platform. Works with outside data sources and API’s. Fixes bugs and improves application performance. Collaborates with cross-functional teams to determine and launch new features. Should have knowledge of core web technologies (HTML5, CSS3, JavaScript). Requires a bachelor’s degree in area of specialty and 2 years of relevant experience."

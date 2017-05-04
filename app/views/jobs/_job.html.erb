@@ -20,7 +20,7 @@
                     <% if current_user &&current_user.has_attribute?(job) %>
                				<%= link_to("Has applied",job_path(job),:class=> "btn btn-danger disabled", :style=>"margin-left:35%;margin-top:15px;")%>
                				<% else %>
-               				<%= link_to("Apply job",job_path(job),:class=> "btn btn-danger", :style=>"margin-left:35%;margin-top:15px;")%>
+               				<%= link_to("投个简历",job_path(job),:class=> "btn btn-danger", :style=>"margin-left:35%;margin-top:15px;")%>
                				<% end %>
 
   </div>

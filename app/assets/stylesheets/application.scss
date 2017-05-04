@@ -31,8 +31,7 @@
 
 html body
   {
-  background-image: url('https://ww1.sinaimg.cn/large/006tKfTcgy1ff54rju5qsj30b40b43zy.jpg');
-  background-repeat: repeat;
+  background-color: #f7f8fa;
   }
 
 
@@ -182,57 +181,35 @@ html body
 /****** 封面 welcome index ******/
 
 .jumbotron {
-background-image:url('https://abc.2008php.com/2014_Website_appreciate/2015-01-22/20150122012623.jpg');
+background-image:url('https://ww1.sinaimg.cn/large/006tNc79gy1ff6zxtmkaaj30ug0j8qt8.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-padding-bottom: 110px;
+padding-bottom: 200;
+color: white;
 
-  height: 700px;
+  height: 900px;
 }
 
 .title {
   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-    background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-    max-width: 200px;//最大宽度
-    margin-top: 100px;//和顶部拉开距离
-    margin-bottom: 0;//这样就可以紧接息面的描述文字
-    border-top-right-radius: 3px;//右上角圆边
-    border-top-left-radius: 3px;//左上角圆边
-    text-align: left;
-  }
+  text-align: center;
+  margin-top: 200px;
 
-   .jumbotron h1, .jumbotron .h1 {
-       text-align: left;//文字左对齐
-       color: #222;  //字体颜色
-
-       padding: 50px 20px 0;//上50px，左右20px，下0
-   }
-
-   .jumbotron p {
-       margin: 0;//上下左右margin为0
-       font-size: 26px;//字体大小
-       max-width: 500px;//最大宽度
-       background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-       padding: 20px;//上下左右padding为20px
-       text-align:left;//文字左对齐
-       color: #222;//字体颜色
-
-       border-bottom-right-radius: 3px;//右下角圆边
-       border-bottom-left-radius: 3px;//左下角圆边
-   }
+  margin-bottom: 100px;
+}
 
 .slogan {
-margin-top: 10px;
-margin-bottom: 50px;
-text-align: left;
-color: white;
-top: 12px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  top: 12px;
 }
 
 .lead {
-margin-bottom: 60px;
-text-align: left;
-color: white;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
 }
     .caption {
     margin: 30px;
@@ -262,9 +239,9 @@ color: white;
   }
 
    .navbar-default {
-       background-color: darkgray;  //背景颜色
+       background-color: #222222;  //背景颜色
 
-       border-color: darkgray; //边框色
+       border-color: #333333; //边框色
 
        margin-bottom: 0; //底部 margin 不撑开距离
    }
@@ -274,7 +251,7 @@ color: white;
       }
     }
      .navbar-default .navbar-brand {
-       color: #EF6C00; //字体颜色
+       color: #ecf0f1; //字体颜色
 
        padding: 10px 15px; //上下10px，左右15px
        line-height: 30px; //文字行高
@@ -282,40 +259,40 @@ color: white;
 
      .navbar-default .navbar-brand:hover,
      .navbar-default .navbar-brand:focus {
-       color: #FF6F00; //鼠标放置在链接上的文字颜色
+       color: #89d8f7; //鼠标放置在链接上的文字颜色
 
        background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
      }
 
       .navbar-default .navbar-nav > li > a{
-        color: #EF6C00;
+        color: #ecf0f1;
 
       }
 
       .navbar-default .navbar-nav > li > a:hover,
       .navbar-default .navbar-nav > li > a:focus {
-        color: #FF6F00;
+        color: #89d8f7;
 
         background-color: transparent;
       }
       .navbar-default .navbar-nav > .active > a,
       .navbar-default .navbar-nav > .active > a:hover,
       .navbar-default .navbar-nav > .active > a:focus {
-        color: #FF6F00;
+        color: #89d8f7;
 
-        background-color: #FFE0B2;
+        background-color: #222222;
 
       }
 
       .navbar-default .navbar-nav > .open > a,
       .navbar-default .navbar-nav > .open > a:focus,
       .navbar-default .navbar-nav > .open > a:hover {
-        background-color: #FFE0B2;
+        background-color: #eeeeee;
 
-        color: #212121;
+        color: #222222;
 
       }
-
+/**********************************************************/
 
        .navbar-brand > img {
         display: inline-block; //图片和链接文字显示在同一行
@@ -330,19 +307,19 @@ color: white;
      }
 
 
-      .btn-danger {
+      .btn-primary {
           color: #fff;//字体颜色
 
-          background-color: #EF6C00;//背景颜色
+          background-color: #36a5e4;//背景颜色
 
-          border-color: #EF6C00;//边框颜色
+          border-color: #228bca;//边框颜色
 
       }
 
       .btn-danger:hover {
-          background-color: #E65100;//鼠标放置在btn上的背景颜色
+          background-color: orange;//鼠标放置在btn上的背景颜色
 
-          border-color: #E65100;//鼠标放置在btn上的边框颜色
+          border-color: #white;//鼠标放置在btn上的边框颜色
 
       }
 
@@ -373,20 +350,29 @@ color: white;
 ******封面翻版***************
 ****************************/
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
 
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
-/* Pad the edges of the mobile views a bit */
+/* circle img */
+.img-square{
+    border-radius:50%;
+    width:300px;
+height:300px;
+}
+
+.img-circle{
+  width:512px;
+height:512px;
+}
+
+
+
+
+
+
+
+
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
@@ -503,6 +489,177 @@ color: white;
 html { height: 100%;}
   body { min-height: 100%; display: flex; flex-direction: column;}
   .content { flex: 1;}
+
+
+
+  .footer-distributed{
+  	background-color: #292c2f;
+  	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  	box-sizing: border-box;
+  	width: 100%;
+  	text-align: left;
+  	font: bold 16px sans-serif;
+
+  	padding: 55px 50px;
+  	margin-top: 80px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  	display: inline-block;
+  	vertical-align: top;
+  }
+
+  /* Footer left */
+
+  .footer-distributed .footer-left{
+  	width: 40%;
+  }
+
+  /* The company logo */
+
+  .footer-distributed h3{
+  	color:  #ffffff;
+  	font: normal 36px 'Cookie', cursive;
+  	margin: 0;
+  }
+
+  .footer-distributed h3 span{
+  	color:  #5383d3;
+  }
+
+  /* Footer links */
+
+  .footer-distributed .footer-links{
+  	color:  #ffffff;
+  	margin: 20px 0 12px;
+  	padding: 0;
+  }
+
+  .footer-distributed .footer-links a{
+  	display:inline-block;
+  	line-height: 1.8;
+  	text-decoration: none;
+  	color:  inherit;
+  }
+
+  .footer-distributed .footer-company-name{
+  	color:  #8f9296;
+  	font-size: 14px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  /* Footer Center */
+
+  .footer-distributed .footer-center{
+  	width: 35%;
+  }
+
+  .footer-distributed .footer-center i{
+  	background-color:  #33383b;
+  	color: #ffffff;
+  	font-size: 25px;
+  	width: 38px;
+  	height: 38px;
+  	border-radius: 50%;
+  	text-align: center;
+  	line-height: 42px;
+  	margin: 10px 15px;
+  	vertical-align: middle;
+  }
+
+  .footer-distributed .footer-center i.fa-envelope{
+  	font-size: 17px;
+  	line-height: 38px;
+  }
+
+  .footer-distributed .footer-center p{
+  	display: inline-block;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	margin:0;
+  }
+
+  .footer-distributed .footer-center p span{
+  	display:block;
+  	font-weight: normal;
+  	font-size:14px;
+  	line-height:2;
+  }
+
+  .footer-distributed .footer-center p a{
+  	color:  #5383d3;
+  	text-decoration: none;;
+  }
+
+
+  /* Footer Right */
+
+  .footer-distributed .footer-right{
+  	width: 20%;
+  }
+
+  .footer-distributed .footer-company-about{
+  	line-height: 20px;
+  	color:  #92999f;
+  	font-size: 13px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  .footer-distributed .footer-company-about span{
+  	display: block;
+  	color:  #ffffff;
+  	font-size: 14px;
+  	font-weight: bold;
+  	margin-bottom: 20px;
+  }
+
+  .footer-distributed .footer-icons{
+  	margin-top: 25px;
+  }
+
+  .footer-distributed .footer-icons a{
+  	display: inline-block;
+  	width: 35px;
+  	height: 35px;
+  	cursor: pointer;
+  	background-color:  #33383b;
+  	border-radius: 2px;
+
+  	font-size: 20px;
+  	color: #ffffff;
+  	text-align: center;
+  	line-height: 35px;
+
+  	margin-right: 3px;
+  	margin-bottom: 5px;
+  }
+
+  /* If you don't want the footer to be responsive, remove these media queries */
+
+  @media (max-width: 880px) {
+
+  	.footer-distributed{
+  		font: bold 14px sans-serif;
+  	}
+
+  	.footer-distributed .footer-left,
+  	.footer-distributed .footer-center,
+  	.footer-distributed .footer-right{
+  		display: block;
+  		width: 100%;
+  		margin-bottom: 40px;
+  		text-align: center;
+  	}
+
+  	.footer-distributed .footer-center i{
+  		margin-left: 0;
+  	}
+
+  }
 
 
 
@@ -645,6 +802,24 @@ index jobs
      color: #f02333;
  }
 
+ .imageoval{
+
+     width: 300px;
+     height:150px;
+
+     -moz-border-radius: 300px / 150px;
+     -webkit-border-radius: 300px / 150px;
+     border-radius: 300px / 150px;
+
+ }
+
+
+
+
+
+
+
+
 
 
 
@@ -662,7 +837,7 @@ index jobs
     margin-top: 60px;
 }
 .box-icon {
-    background-color: #FF6F00;
+    background-color: #36a5e4;
     border-radius: 50%;
     display: table;
     height: 100px;
@@ -709,3 +884,46 @@ index jobs
 .box{
   background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/**********sidebar**********************/
+.pure-menu{box-sizing:border-box}
+.pure-menu-fixed{position:fixed;left:0;top:0;z-index:3}
+.pure-menu-item,.pure-menu-list{position:relative}
+.pure-menu-list{list-style:none;margin:0;padding:0}
+.pure-menu-item{padding:0;margin:0;height:100%}
+.pure-menu-heading,.pure-menu-link{display:block;text-decoration:none;white-space:nowrap}
+.pure-menu-horizontal{width:100%;white-space:nowrap}.pure-menu-horizontal
+.pure-menu-list{display:inline-block}
+.pure-menu-horizontal .pure-menu-heading,.pure-menu-horizontal .pure-menu-item,.pure-menu-horizontal .pure-menu-separator{display:inline-block;zoom:1;vertical-align:middle}
+.pure-menu-item .pure-menu-item{display:block}
+.pure-menu-children{display:none;position:absolute;left:100%;top:0;margin:0;padding:0;z-index:3}
+.pure-menu-horizontal .pure-menu-children{left:0;top:auto;width:inherit}
+.pure-menu-active>.pure-menu-children,.pure-menu-allow-hover:hover>.pure-menu-children{display:block;position:absolute}
+.pure-menu-has-children>.pure-menu-link:after{padding-left:.5em;content:"\25B8";font-size:small}
+.pure-menu-horizontal .pure-menu-has-children>.pure-menu-link:after{content:"\25BE"}
+.pure-menu-scrollable{overflow-y:scroll;overflow-x:hidden}
+.pure-menu-scrollable .pure-menu-list{display:block}
+.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list{display:inline-block}
+.pure-menu-horizontal.pure-menu-scrollable{white-space:nowrap;overflow-y:hidden;overflow-x:auto;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;padding:.5em 0}
+.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar{display:none}
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator,.pure-menu-separator{background-color:#ccc;height:1px;margin:.3em 0}
+.pure-menu-horizontal .pure-menu-separator{width:1px;height:1.3em;margin:0 .3em}
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator{display:block;width:auto}
+.pure-menu-heading{text-transform:uppercase;color:#000}
+.pure-menu-link{color:#777}.pure-menu-children{background-color:#fff}
+.pure-menu-disabled,.pure-menu-heading,.pure-menu-link{padding:.5em 1em}
+.pure-menu-disabled{opacity:.5}
+.pure-menu-disabled .pure-menu-link:hover{background-color:transparent}
+.pure-menu-active>.pure-menu-link,.pure-menu-link:focus,.pure-menu-link:hover{background-color:#999999}
+.pure-menu-selected .pure-menu-link,.pure-menu-selected .pure-menu-link:visited{color:#428bca}
